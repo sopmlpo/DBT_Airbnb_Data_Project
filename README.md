@@ -13,8 +13,9 @@ This project showcases the use of dbt (Data Build Tool) to transform raw Airbnb 
 ## Tools and Technologies
 - **dbt** for transformation and modeling
 - **SQL** for defining business logic
-- **Integration with** Snowflake, BigQuery, or other data warehouses
+- **Integration with** Snowflake
 - **Version control** with Git
+- **Dashboard with** Preset*
 
 ## Key Learning Outcomes
 - Understand the dbt workflow: sources, models, tests, and documentation.
@@ -24,13 +25,13 @@ This project showcases the use of dbt (Data Build Tool) to transform raw Airbnb 
 ## Setup Instructions
 ### 1. Clone the Repository
 ```bash
-git clone <repository_url>
-cd <repository_name>
+git clone https://github.com/sopmlpo/DBT_Airbnb_Data_Project.git
+cd DBT_Airbnb_Data_Project
 ```
 
 ### 2. Install dbt Locally and Configure Connection
 Follow the official [dbt installation guide](https://docs.getdbt.com/docs/introduction) for your operating system.
-
+ 
 ### 3. Run Initial dbt Setup Commands
 ```bash
 dbt deps  # Install dependencies
@@ -50,18 +51,13 @@ dbt docs serve     # Start a local web server for documentation
 ├── models/       # Contains SQL files for dbt models
 ├── tests/        # Includes configurations for data validation
 ├── macros/       # Reusable SQL code snippets
-├── docs/         # Additional documentation
+├── analyses/     # Analyses based on the datamart
+├── seeds/        # Local file with dates of full moon
+├── assets/       # Schema of raw data
+├── snapshots/    # History of updates and changes of the raw data
 ```
 
-## Future Enhancements
-- **Incremental Data Loading:** Optimize performance with incremental models.
-- **Advanced Analytics Use Cases:** Implement price optimization and customer segmentation.
-
-## Contributing
-Feel free to submit issues, feature requests, or pull requests to enhance the project.
-
-## License
-This project is licensed under the MIT License.
+*Note: Loading the Preset dashboard link might show error!
 
 
 
