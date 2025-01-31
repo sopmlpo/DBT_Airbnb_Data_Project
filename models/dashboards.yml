@@ -13,5 +13,5 @@ exposures:
         - ref('mart_full_moon_reviews')
 
       owner:
-        name: Sofiya Popivanova
-        email: sofiya.popivanova@gmail.com
+        name: <>
+        email: <>
