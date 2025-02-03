@@ -1,4 +1,7 @@
-
+package-lock.yml
 target/
 dbt_packages/
 logs/
+docs.md
+overview.md
+.idea
